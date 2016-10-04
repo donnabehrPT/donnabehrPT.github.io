@@ -1,0 +1,362 @@
+/*@import url("http://fonts.googleapis.com/css?family=Bitter:400,700");*/
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic);*/
+@import url(http://fonts.googleapis.com/css?family=Economica:700);
+
+/* FLATLY HAS LATO BY DEFAULT */
+/*body {
+    font-family: "Lato", sans-serif;
+}*/
+
+/*h1,h2,h3,h4,h5,h6 {
+    font-family: "Economica", sans-serif;
+    text-transform: uppercase;
+}*/
+
+
+a { 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.navbar {
+    margin-bottom: 24px;
+}
+
+.div-spacer {
+    height: 50px;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+
+.section-header {
+    color: #2C3E50;
+}
+
+
+
+
+
+.page-header,.text-center {
+    /*color: #6b2b0c; */
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(107, 43, 12, 0.1);
+}
+
+
+.db-list-space li {
+    padding-bottom: 5px;
+}
+
+
+/* ========== FOOTER, HEADER, NAV, SITE TITLE, ETC ========== */
+
+#page-footer {
+    background-color: #b04511; 
+    
+    /* weird but the only way I could get the background color 
+    to go all the way down was to also have a border */
+    border: 1px solid #b04511; 
+}
+
+/*#site-header {
+    background-color: #2C3E50;  brand-primary 
+    border-bottom: 2px solid #fff;
+}*/
+
+.navbar-default {
+    background-color: #b04511;
+    border-color: #b04511;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;    
+    /*background-color: #fff;*/
+    /*border-bottom: 2px solid #b04511;*/
+}
+
+/*.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+    color: #55d9b9;
+    border: 2px solid #fff;
+    text-decoration: underline;
+}*/
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #6b2b0c;
+}
+
+/* get the selection border working */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+    /*border-left: 2px solid #b04511;*/
+    /*border-right: 2px solid #b04511;*/
+    /*border-bottom: 2px solid #b04511;*/
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover {
+    /*border-left: 2px solid #fff;*/
+    /*border-right: 2px solid #fff;*/
+    /*border-bottom: 2px solid #fff;*/
+}
+
+
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #6b2b0c;
+}
+
+/* text of footer */
+#page-footer .navbar-text {
+    color: #fff;
+    padding-top: 20px;
+}
+
+
+
+
+
+.navbar-brand img {
+    height: 50px;  /*come back to this and make it rel */
+}
+
+.dbpt-brand {
+    /* positioning */
+    position:absolute;
+    bottom:5px;
+    margin-bottom:0;
+    padding-bottom:0;
+
+    /* font */
+    /*font-family:"Helvetica Neue", serif;*/
+    font-variant: small-caps;
+    font-size: 48px;
+    vertical-align:0;
+}
+
+.pt-brand {
+    position: absolute;
+    top: 63px;
+    left: 118px;
+    color: #b04511;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.llc-brand {
+    position: absolute;
+
+}
+
+.site-title {
+    font-family:"Economica", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+#toptitle {
+  font-size:300%;
+}
+
+#subtitle {
+    font-family:"Economica", sans-serif;
+    color: #fff;
+    /*font-size: 60%;*/
+}
+
+
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/*#nav-title:hover {
+    color: #fff;
+}*/
+
+
+/* ===== MAKE NAVBAR UL CENTER ======== */
+
+/*#navbar-top .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+#navbar-top .navbar-collapse {
+  text-align: center;
+}*/
+
+
+/* =========== MAKE NAVBAR COLLAPSE EARLIER ========== */
+
+/*.navbar-brand {
+    display:none;
+}
+
+@media (max-width: 1000px) {
+    #nav-title {
+        display: inline-block;
+        font-size: 180%;
+    }
+    #site-header {
+        display:none;
+    }
+    
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+*/
+
+
+
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+
+/* ========== PAGE-SPECIFIC THINGS ========== */
+
+.db-jumbotron-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+#homepage-jumbotron-text {
+    background-color: #b04511;
+    padding-top: 1px; /* weird thing where if this is 0 then it jumps to actually 0 but at 1 it's more than 1 */
+    padding-bottom: 15px;
+}
+
+#homepage-jumbotron-text span {
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.caption {
+    text-align: center;
+    color: #888888;
+    font-style: italic;
+    font-size: smaller;
+}
+
+.pagelink {
+    text-align: right;
+    font-size:75%;
+}
+
+
+#project-list {
+    list-style-type:none;
+}
+#project-list li:before {
+    content:'• '; 
+    font-size:115%; 
+    line-height:100%; 
+    vertical-align:0%;
+}
+
+#btn-pri-interview {
+    font-size: inherit;
+
+}
+
+
+/* ========== DROP SHADOWS FOR IMAGES ========== */
+
+.shadow1 {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+.shadow2 {
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow2:before, .shadow2:after {
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.shadow2:after {
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
