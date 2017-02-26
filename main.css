@@ -30,6 +30,8 @@ a {
 
 blockquote p {
     font-style: italic;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 
@@ -40,7 +42,6 @@ blockquote p {
 .underline {
     text-decoration: underline;
 }
-
 
 
 
@@ -55,6 +56,10 @@ blockquote p {
     padding-bottom: 5px;
 }
 
+.db-img-inline {
+    max-height: 250px;
+    border-radius: 5px;
+}
 
 /* ========== FOOTER, HEADER, NAV, SITE TITLE, ETC ========== */
 
@@ -216,9 +221,31 @@ blockquote p {
 
 /*.navbar-brand {
     display:none;
+}*/
+
+.navbar-default .navbar-nav > li > a {
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+@media (min-width: 1250px) {
+    .navbar-default .navbar-nav > li > a {
+        padding-left:25px;
+        padding-right:25px;
+    }
 }
 
 @media (max-width: 1000px) {
+    .navbar-default .navbar-nav > li > a {
+        padding-left:8px;
+        padding-right:8px;
+    }
+}
+
+
+@media (max-width: 900px) {
     #nav-title {
         display: inline-block;
         font-size: 180%;
@@ -262,7 +289,6 @@ blockquote p {
         display:block !important;
     }
 }
-*/
 
 
 
@@ -297,7 +323,7 @@ blockquote p {
 }
 
 .caption {
-    text-align: center;
+    /*text-align: center;*/
     color: #888888;
     font-style: italic;
     font-size: smaller;
@@ -319,11 +345,67 @@ blockquote p {
     vertical-align:0%;
 }
 
-#btn-pri-interview {
-    font-size: inherit;
-
+.testimonial-photo {
+    /*padding: 0px auto;*/
 }
 
+.testimonial-photo img {
+    max-height:350px;
+    border-radius: 5px;
+    /*padding: 5px;*/
+    /*border: 1px solid #ccc;*/
+    margin: 10px auto;
+}
+
+.testimonial-readmore-link::after {
+    content: " \2192";
+}
+
+/* Similar to .page-header */
+.db-header {
+    border-bottom: 1px solid rgba(107, 43, 12, 0.1);
+    margin: 40px 0 20px;
+    padding-bottom: 9px;
+}
+#homepage h2, #appointments h2 {
+    border-bottom: 1px solid rgba(107, 43, 12, 0.1);
+    margin: 40px 0 20px;
+    padding-bottom: 9px;
+}
+
+#homepage p, #appointments p, #appointments li, #contact p, #references ul {
+    font-weight: 300;
+}
+
+a {
+    font-weight:bolder;
+}
+
+#db-about-portrait {
+    border-radius: 50%;
+    max-width: 95%;
+    max-height:250px;
+}
+
+#db-interview-btn {
+    background-color: #325d88;
+    border-color: transparent;
+}
+
+#db-interview-btn:hover {
+    background-color:#244363;
+}
+
+#db-interview-btn a {
+    color: white;
+    font-weight: normal;
+    text-decoration:none;
+}
+
+#db-interview-btn a:hover {
+    color:white;
+    text-decoration:none;
+}
 
 /* ========== DROP SHADOWS FOR IMAGES ========== */
 
