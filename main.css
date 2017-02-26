@@ -148,7 +148,6 @@ blockquote p {
 .dbpt-brand {
     /* positioning */
     position:absolute;
-    bottom:5px;
     margin-bottom:0;
     padding-bottom:0;
 
@@ -157,6 +156,14 @@ blockquote p {
     font-variant: small-caps;
     font-size: 48px;
     vertical-align:0;
+}
+
+.dbpt-brand {
+    bottom: 5px;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
 
 .pt-brand {
@@ -407,6 +414,10 @@ a {
     text-decoration:none;
 }
 
+#contact iframe {
+    max-width: 100%;
+}
+
 /* ========== DROP SHADOWS FOR IMAGES ========== */
 
 .shadow1 {
@@ -444,4 +455,41 @@ a {
          -o-transform:skew(8deg) rotate(3deg); 
             transform:skew(8deg) rotate(3deg);
 }
+
+
+
+/* ======= SCREEN SIZE ======= */
+
+@media (max-width: 767px) {
+    .db-jumbotron-img {
+        height: 325px;
+    }
+    
+    .dbpt-brand {
+        font-size: 44px;
+    }
+
+    .navbar-toggle:not(.collapsed) + .navbar-brand .dbpt-brand {
+        bottom: 294px;
+        -webkit-transition: all 0.35s ease;
+        -moz-transition: all 0.35s ease;
+        -o-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+    
+    .navbar-toggle:not(.collapsed) + .navbar-brand .pt-brand {
+        visibility: hidden;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    #about h2 {
+        font-size: 26px;
+    }
+}
+
+
+
 
