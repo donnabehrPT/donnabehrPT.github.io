@@ -415,7 +415,7 @@ a {
 }
 
 #contact iframe {
-    max-width: 100%;
+    width: 600px;
 }
 
 /* ========== DROP SHADOWS FOR IMAGES ========== */
@@ -479,6 +479,10 @@ a {
     
     .navbar-toggle:not(.collapsed) + .navbar-brand .pt-brand {
         visibility: hidden;
+    }
+
+    #contact iframe {
+        max-width: 100%;
     }
 
 
