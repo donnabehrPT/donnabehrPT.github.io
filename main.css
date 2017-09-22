@@ -45,7 +45,7 @@ blockquote p {
 
 
 
-.page-header,.text-center {
+.page-header.text-center {
     /*color: #6b2b0c; */
     text-transform: uppercase;
     border-bottom: 1px solid rgba(107, 43, 12, 0.1);
@@ -203,6 +203,12 @@ blockquote p {
 }
 .bold {
     font-weight: bold;
+}
+.alert-link {
+    text-decoration:underline;
+}
+.alert-link:hover {
+    text-decoration:none;
 }
 
 
@@ -418,6 +424,26 @@ a {
     width: 600px;
 }
 
+
+/* ========= RESPONSIVE MAP EMBED FOR CONTACT PAGE ====== */
+/* https://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; /* This is the aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+
 /* ========== DROP SHADOWS FOR IMAGES ========== */
 
 .shadow1 {
@@ -460,6 +486,13 @@ a {
 
 /* ======= SCREEN SIZE ======= */
 
+@media (max-width: 991px) {
+    #contact .google-maps {
+        padding-bottom: 40%;
+    }
+
+}
+
 @media (max-width: 767px) {
     .db-jumbotron-img {
         height: 325px;
@@ -481,10 +514,9 @@ a {
         visibility: hidden;
     }
 
-    #contact iframe {
-        max-width: 100%;
+    #contact .google-maps {
+        padding-bottom: 50%;
     }
-
 
 }
 
