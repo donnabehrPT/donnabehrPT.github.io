@@ -425,6 +425,22 @@ a {
 }
 
 
+
+/* Use CSS before/after and separate them to try to throw off scrapers. */
+#dbpt-email::after {
+    content: "donnabehrPT.com";
+}
+#dbpt-phone::after {
+    content: "400-8636";
+}
+#dbpt-email::before {
+    content: "donna@";
+}
+#dbpt-phone::before {
+    content: "(781) ";
+}
+
+
 /* ========= RESPONSIVE MAP EMBED FOR CONTACT PAGE ====== */
 /* https://www.labnol.org/internet/embed-responsive-google-maps/28333/ */
 .google-maps {
