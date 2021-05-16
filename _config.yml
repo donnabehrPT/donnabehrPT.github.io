@@ -1,11 +1,10 @@
 title: "Donna Behr PT & Pilates"
 author: "Donna Behr Physical Therapy, LLC"
 description: "Donna Behr Physical Therapy & Pilates"
-more: "read more"
+# more: "read more"
 
 url: ""
 baseurl: ""
-# baseurl: "/contrast" # comment out if in root directory
 
 style:
     padding: 33%
