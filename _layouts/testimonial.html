@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+
+<h2 class="page-header text-center">{{ page.title }}</h1>
+
+
+
+{% if page.photo %}
+<div class="testimonial-photo">
+	<img class="img-responsive" src="{{ site.url }}/files/testimonial-photos/{{ page.photo }}" alt="">
+</div>
+{% endif %}
+	
+{{ content }}

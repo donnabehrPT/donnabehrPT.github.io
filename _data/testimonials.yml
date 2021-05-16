@@ -1,0 +1,51 @@
+# photo is optional
+
+
+- name: "Bette H."
+  photo: BH.jpg
+  fulltext: testimonial-BH
+  exerpt: "Donna is a physical therapist of the highest caliber; extensively trained in her expertise of PRI, endlessly curious about how the body really works and boundless in her dedication to creating quality outcomes.<br><br>I am more than pleased that I am now able to take long unencumbered beach walks with my dog on the beach AND am taking a dance class! At age 62, I never even imagined that would be within my reach and am so glad that dance is part of my life again."
+
+- name: "Seth M."
+  photo: SM.jpg
+  fulltext: testimonial-SM
+  exerpt: "This testimonial was easy to write. I was haunted by lower back pain for two and a half years and worked with three physical therapists before I was referred to Donna. Donna's ability to assess and diagnose my elusive back pain was exceptional."
+
+- name: "Katie F."
+  photo: KF.jpg
+  fulltext: testimonial-KF
+  exerpt: "Working with Donna and incorporating PRI into my daily routine has been a life changing experience. As a nurse, I am most impressed with Donna’s clinical expertise and ability to know exactly how to target my back pain with tailored exercises. As a patient, I am most grateful for her compassion, patience, and dedication to healing."
+
+- name: "David S."
+  fulltext: testimonial-DS
+  exerpt: "Donna is caring and sincerely wants to help her patients. In the current state of hurry-up medicine, Donna is a unique find."
+
+- name: "Pat G."
+  fulltext: testimonial-PG
+  exerpt: "Somehow Donna is able to translate and apply the rather esoteric theories and techniques of PRI to each individual. I admire her extensive knowledge and patience, combined with a dedication to staying current with the latest findings in her field. These qualities plus her perpetually upbeat personality make Donna a truly amazing resource."
+
+- name: "Skip I."
+  fulltext: testimonial-SI
+  exerpt: "She is an expert in her field and a pleasure to work with. Her style was supportive and encouraging but also adamant that I do my exercises properly. Armed with both exercises and a better understanding of my body, I have now been pain free for over 6 months."
+
+- name: "John W."
+  fulltext: testimonial-JW
+  exerpt: "From our first meeting, I felt encouraged and hopeful. Donna is a careful listener and tuned-in observer; from the outset, she taught me a series of exercises—many focusing on the breath—that both relieved pain (which was, at the time, substantial) and had a calming psychological effect."
+
+- name: "Chris M."
+  photo: CM.jpg
+  fulltext: testimonial-CM
+  exerpt: "I must admit I was skeptical, especially from all of my previous experiences. How could blowing up a balloon help my foot? However the day after my first appointment I knew it was no joke and I began the path of recovery. She has a great sense of humor and we could make great light of conversations during some challenging exercises."
+
+- name: "James C."
+  photo: JC.jpg
+  fulltext: testimonial-JC
+  exerpt: "I am a strength & conditioning coach so, my job requires me to be active and my injuries were holding me back. It got to the point where I contemplated changing profession...After seeing Donna for approximately 5 weeks, I can do things that I haven't been able to since I was 17. But most importantly, I can work pain free. Donna didn't just relieve me of any pain, she also talked me through the entire process."
+
+- name: "Cris R."
+  fulltext: testimonial-CR
+  exerpt: "With her expertise in postural adjustment, she goes beyond standard PT remedies that might deal with the proximal causes of an injury, and treats the origins of many physical difficulties.  In my case this had led not only to reduced pain and quicker recovery, but it has helped me develop habits that I know have already kept a few near-misses from becoming full-blown miseries."
+
+- name: "Amanda R."
+  fulltext: testimonial-AR
+  exerpt: "Donna was extremely kind, patient and willing to get to the root of my issues. She went above and beyond the call of duty by not only working with me to get me back into better physical condition with a lot less pain but also helped me to realize that my back issues stemmed from a long horse back riding career in which I overarched my back."

@@ -1,55 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  
-  <meta name="description" content="Donna Behr Physical Therapy & Pilates">
-  <title> Testimonials › Donna Behr PT & Pilates</title>
-  <link rel="canonical" href="/testimonials/">
-  
-  <script src="/dependencies/jquery-2.1.4.min.js"></script>
-  <link href='/dependencies/font-awesome-4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="/bootswatch-sandstone.bootstrap.css">
-  <script src="/dependencies/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-  <link href="/main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <nav class="navbar navbar-default navbar-static-top" id="navbar-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">
-          <!-- <img alt="Brand" class="img-responsive" src="/files/logoimg.png" /> -->
-          <span class="dbpt-brand">Donna Behr</span>
-          <span class="pt-brand">Physical Therapy &amp; Pilates</span>
-          <!-- <span class="llc-brand">LLC</span> -->
-        </a>
-      </div>
+---
+layout: blank
+title: Testimonials
+---
 
-      <div class="collapse navbar-collapse " id="navbar-top-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li ><a href="/"><i class="fa fa-lg fa-fw fa-home "></i> Home</a></li>
-          <li ><a href="/about/"><i class="fa fa-fw fa-lg fa-user-md"></i> About Me</a></li>
-          <li ><a href="/references/"><i class="fa fa-fw fa-lg fa-link"></i> Useful Links</a></li>
-          <li  class="active"><a href="/testimonials/"><i class="fa fa-fw fa-lg fa-heart"></i> Testimonials</a></li>
-          <li ><a href="/appointments/"><i class="fa fa-fw fa-lg fa-users"><!-- could do wrench --></i> Working With Me</a></li> 
-          <li ><a href="/contact/"><i class="fa fa-fw fa-lg fa-envelope"></i> Contact</a></li> 
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-<div id="everythingyo">
-
-<!-- <div class="jumbotron db-jumbotron-img" style="background-image: url(/files/callie-on-mountain_400k.jpg)">
+<!-- <div class="jumbotron db-jumbotron-img" style="background-image: url({{ site.url }}/files/callie-on-mountain_400k.jpg)">
 		<h1><span>Testimonials</span></h1>
 </div> -->
 
@@ -64,138 +18,20 @@
 	
 	<div class="row">
 
-		
+		{% for patient in site.data.testimonials %}
 		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			<div class="thumbnail testimonial">
-				
-				<img src="/files/testimonial-photos/BH.jpg" alt="">
-				
+				{% if patient.photo %}
+				<img src="{{ site.url }}/files/testimonial-photos/{{ patient.photo }}" alt="">
+				{% endif %}
 				<div class="caption">
-					<h3>Bette H.</h3>
-					<p>Donna is a physical therapist of the highest caliber; extensively trained in her expertise of PRI, endlessly curious about how the body really works and boundless in her dedication to creating quality outcomes.<br><br>I am more than pleased that I am now able to take long unencumbered beach walks with my dog on the beach AND am taking a dance class! At age 62, I never even imagined that would be within my reach and am so glad that dance is part of my life again.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-BH.html">Read More</a></p>
+					<h3>{{ patient.name }}</h3>
+					<p>{{ patient.exerpt }}</p>
+					<p><a class="testimonial-readmore-link" href="{{ site.url }}/testimonials/{{ patient.fulltext }}.html">Read More</a></p>
 				</div>
 			</div>
 		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<img src="/files/testimonial-photos/SM.jpg" alt="">
-				
-				<div class="caption">
-					<h3>Seth M.</h3>
-					<p>This testimonial was easy to write. I was haunted by lower back pain for two and a half years and worked with three physical therapists before I was referred to Donna. Donna's ability to assess and diagnose my elusive back pain was exceptional.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-SM.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<img src="/files/testimonial-photos/KF.jpg" alt="">
-				
-				<div class="caption">
-					<h3>Katie F.</h3>
-					<p>Working with Donna and incorporating PRI into my daily routine has been a life changing experience. As a nurse, I am most impressed with Donna’s clinical expertise and ability to know exactly how to target my back pain with tailored exercises. As a patient, I am most grateful for her compassion, patience, and dedication to healing.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-KF.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>David S.</h3>
-					<p>Donna is caring and sincerely wants to help her patients. In the current state of hurry-up medicine, Donna is a unique find.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-DS.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>Pat G.</h3>
-					<p>Somehow Donna is able to translate and apply the rather esoteric theories and techniques of PRI to each individual. I admire her extensive knowledge and patience, combined with a dedication to staying current with the latest findings in her field. These qualities plus her perpetually upbeat personality make Donna a truly amazing resource.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-PG.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>Skip I.</h3>
-					<p>She is an expert in her field and a pleasure to work with. Her style was supportive and encouraging but also adamant that I do my exercises properly. Armed with both exercises and a better understanding of my body, I have now been pain free for over 6 months.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-SI.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>John W.</h3>
-					<p>From our first meeting, I felt encouraged and hopeful. Donna is a careful listener and tuned-in observer; from the outset, she taught me a series of exercises—many focusing on the breath—that both relieved pain (which was, at the time, substantial) and had a calming psychological effect.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-JW.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<img src="/files/testimonial-photos/CM.jpg" alt="">
-				
-				<div class="caption">
-					<h3>Chris M.</h3>
-					<p>I must admit I was skeptical, especially from all of my previous experiences. How could blowing up a balloon help my foot? However the day after my first appointment I knew it was no joke and I began the path of recovery. She has a great sense of humor and we could make great light of conversations during some challenging exercises.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-CM.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<img src="/files/testimonial-photos/JC.jpg" alt="">
-				
-				<div class="caption">
-					<h3>James C.</h3>
-					<p>I am a strength & conditioning coach so, my job requires me to be active and my injuries were holding me back. It got to the point where I contemplated changing profession...After seeing Donna for approximately 5 weeks, I can do things that I haven't been able to since I was 17. But most importantly, I can work pain free. Donna didn't just relieve me of any pain, she also talked me through the entire process.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-JC.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>Cris R.</h3>
-					<p>With her expertise in postural adjustment, she goes beyond standard PT remedies that might deal with the proximal causes of an injury, and treats the origins of many physical difficulties.  In my case this had led not only to reduced pain and quicker recovery, but it has helped me develop habits that I know have already kept a few near-misses from becoming full-blown miseries.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-CR.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail testimonial">
-				
-				<div class="caption">
-					<h3>Amanda R.</h3>
-					<p>Donna was extremely kind, patient and willing to get to the root of my issues. She went above and beyond the call of duty by not only working with me to get me back into better physical condition with a lot less pain but also helped me to realize that my back issues stemmed from a long horse back riding career in which I overarched my back.</p>
-					<p><a class="testimonial-readmore-link" href="/testimonials/testimonial-AR.html">Read More</a></p>
-				</div>
-			</div>
-		</div>
-		
+		{% endfor %}
 		
 	</div>
 
@@ -210,7 +46,7 @@
 			<div class="caption">
 				<h3></h3>
 				<p></p>
-				<p><a class="testimonial-readmore-link" href="/testimonials/testimonials-.html">Read More</a></p>
+				<p><a class="testimonial-readmore-link" href="{{ site.url }}/testimonials/testimonials-.html">Read More</a></p>
 			</div>
 		</div>
 	</div>
@@ -229,22 +65,4 @@
   <!-- </div> -->
 <!-- </div> -->
 
-<!-- <div class="jumbotron db-jumbotron-img" style="background-image: url(/files/callie-on-mountain_400k.jpg)"></div> -->
-
-</div>
-
-<br><br>
-
-  <footer id="page-footer">
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container-fluid"> 
-        <div class="row">
-          <div class="col-md-4 col-md-offset-8">
-            <p class="navbar-text">Donna Behr Physical Therapy, LLC &copy; 2021</p>    
-          </div>
-        </div>
-      </div>
-    </nav>
-  </footer>
-</body>
-</html>
+<!-- <div class="jumbotron db-jumbotron-img" style="background-image: url({{ site.url }}/files/callie-on-mountain_400k.jpg)"></div> -->

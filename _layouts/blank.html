@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="{{ site.encoding }}">
+  {% if page.author %}<meta name="author" content="{{ page.author }}">{% endif %}
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %} {{ page.title }} › {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
+  
+  <script src="{{ site.url }}/dependencies/jquery-2.1.4.min.js"></script>
+  <link href='{{ site.url }}/dependencies/font-awesome-4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="{{ site.url }}/bootswatch-sandstone.bootstrap.css">
+  <script src="{{ site.url }}/dependencies/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <link href="{{ site.url }}/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-static-top" id="navbar-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{{ site.url }}/">
+          <!-- <img alt="Brand" class="img-responsive" src="{{ site.url }}/files/logoimg.png" /> -->
+          <span class="dbpt-brand">Donna Behr</span>
+          <span class="pt-brand">Physical Therapy &amp; Pilates</span>
+          <!-- <span class="llc-brand">LLC</span> -->
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse " id="navbar-top-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li {% if page.url == "/" %} class="active"{% endif %}><a href="{{ site.url }}/"><i class="fa fa-lg fa-fw fa-home "></i> Home</a></li>
+          <li {% if page.url == "/about/" %} class="active"{% endif %}><a href="{{ site.url }}/about/"><i class="fa fa-fw fa-lg fa-user-md"></i> About Me</a></li>
+          <li {% if page.url == "/references/" %} class="active"{% endif %}><a href="{{ site.url }}/references/"><i class="fa fa-fw fa-lg fa-link"></i> Useful Links</a></li>
+          <li {% if page.url == "/testimonials/" %} class="active"{% endif %}><a href="{{ site.url }}/testimonials/"><i class="fa fa-fw fa-lg fa-heart"></i> Testimonials</a></li>
+          <li {% if page.url == "/appointments/" %} class="active"{% endif %}><a href="{{ site.url }}/appointments/"><i class="fa fa-fw fa-lg fa-users"><!-- could do wrench --></i> Working With Me</a></li> 
+          <li {% if page.url == "/contact/" %} class="active"{% endif %}><a href="{{ site.url }}/contact/"><i class="fa fa-fw fa-lg fa-envelope"></i> Contact</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div id="everythingyo">
+
+{{ content }}
+
+</div>
+
+<br><br>
+
+  <footer id="page-footer">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid"> 
+        <div class="row">
+          <div class="col-md-4 col-md-offset-8">
+            <p class="navbar-text">{{site.author}} &copy; {{ site.time | date: "%Y" }}</p>    
+          </div>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>

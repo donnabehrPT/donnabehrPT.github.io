@@ -1,0 +1,1 @@
+I am a licensed physical therapist with 30+ years of experience. I value spending time with clients to better understand their needs and to develop a personal approach to restoring their vitality.

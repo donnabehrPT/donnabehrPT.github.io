@@ -1,53 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  
-  <meta name="description" content="Donna Behr Physical Therapy & Pilates">
-  <title> About Me › Donna Behr PT & Pilates</title>
-  <link rel="canonical" href="/about/">
-  
-  <script src="/dependencies/jquery-2.1.4.min.js"></script>
-  <link href='/dependencies/font-awesome-4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="/bootswatch-sandstone.bootstrap.css">
-  <script src="/dependencies/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-  <link href="/main.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <nav class="navbar navbar-default navbar-static-top" id="navbar-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">
-          <!-- <img alt="Brand" class="img-responsive" src="/files/logoimg.png" /> -->
-          <span class="dbpt-brand">Donna Behr</span>
-          <span class="pt-brand">Physical Therapy &amp; Pilates</span>
-          <!-- <span class="llc-brand">LLC</span> -->
-        </a>
-      </div>
-
-      <div class="collapse navbar-collapse " id="navbar-top-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li ><a href="/"><i class="fa fa-lg fa-fw fa-home "></i> Home</a></li>
-          <li  class="active"><a href="/about/"><i class="fa fa-fw fa-lg fa-user-md"></i> About Me</a></li>
-          <li ><a href="/references/"><i class="fa fa-fw fa-lg fa-link"></i> Useful Links</a></li>
-          <li ><a href="/testimonials/"><i class="fa fa-fw fa-lg fa-heart"></i> Testimonials</a></li>
-          <li ><a href="/appointments/"><i class="fa fa-fw fa-lg fa-users"><!-- could do wrench --></i> Working With Me</a></li> 
-          <li ><a href="/contact/"><i class="fa fa-fw fa-lg fa-envelope"></i> Contact</a></li> 
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-<div id="everythingyo">
+---
+layout: blank
+title: About Me
+---
 
 <div id="about">
 	<div class="container">
@@ -55,12 +9,11 @@
 			<div class="col-md-4 col-md-offset-1 col-sm-5">
 				<h2>Donna&nbsp;Behr&ensp;<small>PT,&nbsp;MS,&nbsp;DPT,&nbsp;PRC</small></h3>
 
-				<img src="/files/about-photo.jpg" alt="Donna Behr Photo" class="img-responsive" id="db-about-portrait">
+				<img src="{{ site.url }}/files/about-photo.jpg" alt="Donna Behr Photo" class="img-responsive" id="db-about-portrait">
 
 				<br>
 				
-				<p>I am a licensed physical therapist with 30+ years of experience. I value spending time with clients to better understand their needs and to develop a personal approach to restoring their vitality.</p>
-
+				{% markdown about-statement.md %}
 
 				<br>
 				
@@ -76,78 +29,7 @@
 			<div class="col-md-1 col-sm-1"></div>
 			<div class="col-md-5 col-sm-6">
 				<div style="font-size:smaller">
-					
-<h4 id="licensure-and-certifications">Licensure and Certifications</h4>
-
-<ul>
-  <li>Licensed Physical Therapist in Massachusetts</li>
-  <li>Postural Restoration Certified™ (PRC)</li>
-  <li>Selective Functional Movement Assessment (SFMA) Certified</li>
-  <li>Polestar Rehab Pilates Certified</li>
-</ul>
-
-<h4 id="education">Education</h4>
-
-<ul>
-  <li>MGH Institute of Health Professions 2004
-    <ul>
-      <li>Doctor of Physical Therapy</li>
-    </ul>
-  </li>
-  <li>MGH Institute of Health Professions 1994
-    <ul>
-      <li>Masters of Science in PT with concentration in Orthopedics, post professional degree</li>
-    </ul>
-  </li>
-  <li>Northeastern University 1984
-    <ul>
-      <li>Bachelors of Science in Physical Therapy</li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="professional-experience">Professional Experience</h4>
-
-<ul>
-  <li>Massachusetts General Hospital
-    <ul>
-      <li>Waltham satellite out-patient clinic</li>
-    </ul>
-  </li>
-  <li>Orthopaedic Physical Therapy Services
-    <ul>
-      <li>Daniel Dyrek, owner</li>
-    </ul>
-  </li>
-  <li>Newton Wellesley Hospital
-    <ul>
-      <li>Out-patient department clinician</li>
-      <li>Center coordinator of clinical education</li>
-    </ul>
-  </li>
-  <li>Spaulding Rehabilitation Hospital
-    <ul>
-      <li>In-patient clinician</li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="teaching-experience">Teaching Experience</h4>
-
-<ul>
-  <li>Massachusetts General Hospital IHP</li>
-  <li>Simmons College</li>
-  <li>Northeastern University</li>
-</ul>
-
-<h4 id="honors--awards">Honors &amp; Awards</h4>
-
-<ul>
-  <li>Marjorie Ionta Award for Clinical Excellence</li>
-  <li>Mary Mankin Prize for Outstanding Thesis</li>
-</ul>
-
-
+					{% markdown about-credentials.md %}
 				</div>	
 			</div>
 			<div class="col-md-1"></div>
@@ -155,22 +37,3 @@
 		</div>
 	</div>	
 </div>
-
-
-</div>
-
-<br><br>
-
-  <footer id="page-footer">
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container-fluid"> 
-        <div class="row">
-          <div class="col-md-4 col-md-offset-8">
-            <p class="navbar-text">Donna Behr Physical Therapy, LLC &copy; 2021</p>    
-          </div>
-        </div>
-      </div>
-    </nav>
-  </footer>
-</body>
-</html>
