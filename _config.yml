@@ -3,7 +3,8 @@ author: "Donna Behr Physical Therapy, LLC"
 description: "Donna Behr Physical Therapy & Pilates"
 more: "read more"
 
-url: "https://donnabehrpt.com"
+url: ""
+baseurl: ""
 # baseurl: "/contrast" # comment out if in root directory
 
 style:
@@ -16,6 +17,7 @@ style:
         odd: "#ffffff"
         even: "#222222"
 
+markdown: kramdown
 
 # note that ths uses "Font Awesome" icons
 # http://fortawesome.github.io/Font-Awesome/icons/
